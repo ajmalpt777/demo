@@ -1,0 +1,12 @@
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Aldrich:300,400:latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Alex Brush:300,400:latin,latin-ext');
+
+h1,a{
+    font-family:'Aldrich','Oswald',arial narrow,sans-serif;
+    color: blue;
+}
+#title-main{
+    text-align: center;
+    background-color:#f8f9fa;
+}

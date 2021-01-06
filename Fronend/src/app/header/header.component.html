@@ -1,0 +1,46 @@
+<div id="title-main">
+<h1>
+    {{title}}
+</h1>
+</div>
+
+
+<div class="card-header ">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login" *ngIf=" !_auth.logIn()"  >Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/signup" *ngIf=" !_auth.logIn()">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/books" *ngIf=" _auth.logIn()">Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add/books" *ngIf="_auth.loggedIn()">Add Book</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/authors" *ngIf=" _auth.logIn()" >Authors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add/authors" *ngIf="_auth.loggedIn()">Add Author</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="_auth.loggedIn() || _auth.loggedUserIn() " (click)="logoutUser()">LogOut</a>
+      </li>
+    </ul>
+  </div>
+
+<!-- <div>
+<nav>
+<div class="collapse navbar-collapse" id=navbarSupportedContent>
+    <ul class="navbar-nav navbar-right">
+      <a class="navbar-link" routerLinkActive="active" routerLink="/login" *ngIf="!_auth.loggedIn()">LogIn</a>
+       <a routerLink="/add" class="navbar-link" style="cursor: pointer;" *ngIf="_auth.loggedIn()">Add Product</a>
+       <a class="navbar-link" style="cursor: pointer;" *ngIf="_auth.loggedIn()" (click)="logoutUser()">Logout</a>
+    </ul>
+</div> -->
+

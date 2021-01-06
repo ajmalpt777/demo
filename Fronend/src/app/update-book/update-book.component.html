@@ -1,0 +1,97 @@
+<div class='card'>
+        <div class='card-header'>
+           <h3>Edit Book</h3> 
+        </div>
+        <div class='card-body'>
+
+                 
+<div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+       
+            <!--/stories-->
+            <form (ngSubmit)="editBook()" #updatebookform="ngForm">
+              <div class="form-group">
+                  <label >Book Title</label>
+                  <input type="text" name="b_title" [(ngModel)]="bookItem.title" placeholder="Type Title Of Book" class="form-control" required >
+                  <p id="titleErr"></p>
+              </div>
+        
+              <div class="form-group">
+                  <label >Author</label>
+                  <input type="text" name="b_auth" [(ngModel)]="bookItem.author" placeholder="Type Author Of Book"  class="form-control"  required>
+              </div>
+              
+              <div class="form-group">
+                  <label >Book Genre</label>
+                  <input type="text" name="b_genre" [(ngModel)]="bookItem.genre" placeholder="Type Genre Of Book"  class="form-control" required>
+                        
+              </div>
+              <div class="form-group">
+                  <label >Book Image</label>
+                  <input type="file" name="b_image" [(ngModel)]="bookItem.image" placeholder="Chose Image Of Book"  class="form-control" required>
+              </div>
+              <button type="submit"  value="Submit" class="btn btn-primary btn-block" [disabled]="updatebookform.form.invalid">Submit</button>
+  </form>
+  <br>
+  <br>  
+  
+            <!--/stories-->
+            
+            
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>
+                        
+
+
+
+
+
+
+
+
+            <!-- <div class='table-responsive'>
+                <table class=table>
+                    <tbody>
+                        <tr>
+                            <td><label> Book Title</label></td>
+                            <td><input type="text" name="b_title" [(ngModel)]="bookItem.title"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Book Author</label></td>
+                            <td><input type="text" name="b_auth" [(ngModel)]="bookItem.author"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Book Genre</label></td>
+                            <td><input type="text" name="b_genre" [(ngModel)]="bookItem.genre"></td>
+                        </tr>
+                          <tr>
+                            <td><label> Book Image</label></td>
+                            <td><input type="text" name="b_image" [(ngModel)]="bookItem.image"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form> -->
+</div>
+
+

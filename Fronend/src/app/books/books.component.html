@@ -1,0 +1,42 @@
+<div class='card' style="width: 100%">
+    <div class='card-header' style="width: 100">
+        <h3>{{title}} </h3>
+    </div>
+    <div class='card-body' style="width: 100">
+       
+
+        <div class="row" *ngFor='let book of books'>    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+        <img alt="" src={{book.image}} style="width:100px;height:100px"  class="rounded-circle" >
+            </div>
+
+
+            <br>
+            <div class="col col-lg-2">
+              <div class="row">
+                <div class="col-xs-9">
+                    <h2>{{book.title}}</h2>
+                  <h4><span class="label label-default">{{book.author}}</span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">{{book.genre}}   
+                    </small>
+                  </h4>
+                <div></div>
+                </div>
+                <div>
+                <button class="btn btn-warning" style="cursor: pointer;" *ngIf="_auth.loggedIn()" (click)="editBook(book)" >EDIT</button>
+                <button class="btn btn-danger" id="btnspace2" style="cursor: pointer;" *ngIf="_auth.loggedIn()" (click)="deleteBook(book)" >DELETE</button>
+                </div>
+              </div>
+              <hr>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+          
+          
+
+    </div>
+</div>
+
+

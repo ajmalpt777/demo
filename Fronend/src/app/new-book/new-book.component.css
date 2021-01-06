@@ -1,0 +1,12 @@
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Aldrich:300,400:latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Alex Brush:300,400:latin,latin-ext');
+
+.card-body{
+    background-color:#f8f9fa ; 
+ }
+
+ h3{
+    font-family:'Aldrich','Oswald',sans-serif;
+    color: blue;
+} 

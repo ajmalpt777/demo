@@ -1,0 +1,122 @@
+<div class='card'>
+        <div class='card-header'>
+            <h3>{{title}}</h3>
+        </div>
+        <div class='card-body'>
+
+
+           
+<div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+       
+            <!--/stories-->
+            <form (ngSubmit)="AddAuthor()" #addauthorform="ngForm">
+              <div class="form-group">
+                  <label >Author Name</label>
+                  <input type="text" name="a_name" [(ngModel)]="authorItem.name" #aname='ngModel' placeholder="Type Name Of Author" class="form-control" required >
+                  <small class="text-danger" [class.d-none]="aname.valid || aname.touched">Empty Value Not Supported</small>    
+
+                </div>
+        
+              <div class="form-group">
+                  <label >Author Genre</label>
+                  <input type="text" name="a_genre" [(ngModel)]="authorItem.genre" #agenre='ngModel' placeholder="Type Genre"  class="form-control" required >
+                  <small class="text-danger" [class.d-none]="agenre.valid || agenre.touched">Empty Value Not Supported</small>    
+
+                </div>
+              
+              <div class="form-group">
+                  <label >Book1</label>
+                  <input type="text" name="a_book1" [(ngModel)]="authorItem.book1"  #book1='ngModel' placeholder="Type Name Of Book1"  class="form-control" required>
+                  <small class="text-danger" [class.d-none]="book1.valid || book1.touched">Empty Value Not Supported</small>    
+              </div>
+              <div class="form-group">
+                <label >Book2</label>
+                <input type="text" name="a_book2" [(ngModel)]="authorItem.book2" placeholder="Type Name Of Book2(optional)"  class="form-control">
+                      
+            </div>
+            <div class="form-group">
+                <label >Book3</label>
+                <input type="text" name="a_book3" [(ngModel)]="authorItem.book3" placeholder="Type Name Of Book3(optional)"  class="form-control">
+                      
+            </div>
+              <div class="form-group">
+                  <label >Author Image</label>
+                  <input type="file" name="a_image" [(ngModel)]="authorItem.image" #bimage='ngModel' placeholder="Chose Image Of Book"  class="form-control" required>
+                  <small class="text-danger" [class.d-none]="bimage.valid || bimage.touched">Empty Value Not Supported</small>    
+
+                </div>
+              <button type="submit"  value="Submit" class="btn btn-primary btn-block" [disabled]="addauthorform.form.invalid">Submit</button>
+  </form>
+  <br>
+  <br>  
+  
+            <!--/stories-->
+            
+            
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>
+                        
+
+
+
+
+
+
+
+<!-- 
+            <div class='table-responsive'>
+                <table class=table>
+                    <tbody>
+                        <tr>
+                            <td><label> Author Name</label></td>
+                            <td><input type="text" name="a_name" [(ngModel)]="authorItem.name"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Author Genre</label></td>
+                            <td><input type="text" name="a_genre" [(ngModel)]="authorItem.genre"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Book1 </label></td>
+                            <td><input type="text" name="a_book1" [(ngModel)]="authorItem.book1"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Book2 </label></td>
+                            <td><input type="text" name="a_book2" [(ngModel)]="authorItem.book2"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Book3 </label></td>
+                            <td><input type="text" name="a_book3" [(ngModel)]="authorItem.book3"></td>
+                        </tr>
+                         <tr>
+                            <td><label> Author Image</label></td>
+                            <td><input type="text" name="a_image" [(ngModel)]="authorItem.image"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form> -->
+
+</div>
+
+
